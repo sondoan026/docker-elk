@@ -76,8 +76,8 @@ services:
       - ./postgresql.jar:/usr/share/logstash/logstash-core/lib/jars/postgresql.jar
     ports:
       - 5044:5044
-      - 50000:50000/tcp
-      - 50000:50000/udp
+      - 50001:50000/tcp
+      - 50001:50000/udp
       - 9600:9600
     environment:
       LS_JAVA_OPTS: -Xms2g -Xmx2g
