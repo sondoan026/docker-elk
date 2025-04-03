@@ -1,3 +1,5 @@
 - pipeline.id: app_loyalty_kn_pipeline_partner
   path.config: "/usr/share/logstash/pipeline/app_loyalty_kn_pipeline_partner.conf"
 
+- pipeline.id: app_loyalty_kn_pipeline_walkin
+  path.config: "/usr/share/logstash/pipeline/app_loyalty_kn_pipeline_walkin.conf"
