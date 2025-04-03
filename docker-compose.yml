@@ -84,6 +84,7 @@ services:
       LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
     networks:
       - elk
+    command: ["-f", "/usr/share/logstash/pipeline/pipelines.yml"]
     depends_on:
       - elasticsearch
     restart: unless-stopped
