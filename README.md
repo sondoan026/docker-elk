@@ -103,7 +103,7 @@ own_. [sherifabdlnaby/elastdocker][elastdocker] is one example among others of p
 By default, the stack exposes the following ports:
 
 * 5044: Logstash Beats input
-* 50000: Logstash TCP input
+* 50001: Logstash TCP input
 * 9600: Logstash monitoring API
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
@@ -241,16 +241,16 @@ in:
 
 Now that the stack is fully configured, you can go ahead and inject some log entries.
 
-The shipped Logstash configuration allows you to send data over the TCP port 50000. For example, you can use one of the
+The shipped Logstash configuration allows you to send data over the TCP port 50001. For example, you can use one of the
 following commands — depending on your installed version of `nc` (Netcat) — to ingest the content of the log file
 `/path/to/logfile.log` in Elasticsearch, via Logstash:
 
 ```sh
 # Execute `nc -h` to determine your `nc` version
 
-cat /path/to/logfile.log | nc -q0 localhost 50000          # BSD
-cat /path/to/logfile.log | nc -c localhost 50000           # GNU
-cat /path/to/logfile.log | nc --send-only localhost 50000  # nmap
+cat /path/to/logfile.log | nc -q0 localhost 50001          # BSD
+cat /path/to/logfile.log | nc -c localhost 50001           # GNU
+cat /path/to/logfile.log | nc --send-only localhost 50001  # nmap
 ```
 
 You can also load the sample data provided by your Kibana installation.
