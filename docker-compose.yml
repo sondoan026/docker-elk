@@ -72,6 +72,7 @@ services:
         ELASTIC_VERSION: ${ELASTIC_VERSION}
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
+      - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
       - ./postgresql.jar:/usr/share/logstash/jdbc_drivers/postgresql.jar
     ports:
@@ -84,7 +85,6 @@ services:
       LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
     networks:
       - elk
-    command: ["-f", "/usr/share/logstash/pipeline/pipelines.yml"]
     depends_on:
       - elasticsearch
     restart: unless-stopped
