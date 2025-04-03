@@ -73,7 +73,7 @@ services:
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
-      - ./postgresql.jar:/usr/share/logstash/logstash-core/lib/jars/postgresql.jar
+      - ./postgresql.jar:/usr/share/logstash/jdbc_drivers/postgresql.jar
     ports:
       - 5044:5044
       - 50001:50000/tcp
