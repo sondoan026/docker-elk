@@ -5,7 +5,7 @@ input {
     jdbc_connection_string => "jdbc:postgresql://10.10.10.152:54580/dev_erp"
     jdbc_user => "erp_db_user"
     jdbc_password => "Erp@scI2021"
-    schedule => "* * * * *" # Chạy mỗi phút
+    schedule => "0 * * * *" # Chạy mỗi giờ
     statement => "SELECT id, name FROM res_partner limit 10"
   }
 
