@@ -81,7 +81,7 @@ services:
       - 50001:50000/udp
       - 9600:9600
     environment:
-      LS_JAVA_OPTS: "-Xms2g -Xmx2g"
+      LS_JAVA_OPTS: "-Xms3g -Xmx3g"
       LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
     networks:
       - elk
