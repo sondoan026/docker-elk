@@ -6,3 +6,6 @@
 
 - pipeline.id: logstash_pipeline_walkin_kn
   path.config: "/usr/share/logstash/pipeline/logstash_pipeline_walkin_kn.conf"
+
+- pipeline.id: logstash_pipeline_evaluation_kn
+  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_evaluation_kn.conf"
