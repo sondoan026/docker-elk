@@ -75,6 +75,7 @@ services:
       - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro,Z
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
       - ./postgresql.jar:/usr/share/logstash/jdbc_drivers/postgresql.jar
+      - ./logstash_metadata:/usr/share/logstash/metadata
     ports:
       - 5044:5044
       - 50001:50000/tcp
