@@ -1,8 +1,8 @@
 - pipeline.id: logstash_pipeline_partner.conf
   path.config: "/usr/share/logstash/pipeline/logstash_pipeline_partner.conf"
 
-- pipeline.id: logstash_pipeline_users
-  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_users.conf"
+#- pipeline.id: logstash_pipeline_users
+#  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_users.conf"
 
 - pipeline.id: logstash_pipeline_walkin_kn
   path.config: "/usr/share/logstash/pipeline/logstash_pipeline_walkin_kn.conf"
