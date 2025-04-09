@@ -1,14 +1,14 @@
-#- pipeline.id: logstash_pipeline_partner.conf
-#  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_partner.conf"
+- pipeline.id: logstash_pipeline_partner.conf
+  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_partner.conf"
 
 - pipeline.id: logstash_pipeline_walkin_kn
   path.config: "/usr/share/logstash/pipeline/logstash_pipeline_walkin_kn.conf"
 
-#- pipeline.id: logstash_pipeline_evaluation_kn
-#  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_evaluation_kn.conf"
+- pipeline.id: logstash_pipeline_evaluation_kn
+  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_evaluation_kn.conf"
 
-#- pipeline.id: logstash_pipeline_prescription_kn
-#  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_prescription_kn.conf"
+- pipeline.id: logstash_pipeline_prescription_kn
+  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_prescription_kn.conf"
 
-#- pipeline.id: logstash_pipeline_prescription_line_kn
-#  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_prescription_line_kn.conf"
+- pipeline.id: logstash_pipeline_prescription_line_kn
+  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_prescription_line_kn.conf"
