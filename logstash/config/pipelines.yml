@@ -9,3 +9,6 @@
 
 - pipeline.id: logstash_pipeline_evaluation_kn
   path.config: "/usr/share/logstash/pipeline/logstash_pipeline_evaluation_kn.conf"
+
+- pipeline.id: logstash_pipeline_prescription_kn
+  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_prescription_kn.conf"
