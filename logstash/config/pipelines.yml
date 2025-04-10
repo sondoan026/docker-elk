@@ -15,6 +15,3 @@
 
 - pipeline.id: logstash_pipeline_crm_line_kn
   path.config: "/usr/share/logstash/pipeline/logstash_pipeline_crm_line_kn.conf"
-
-- pipeline.id: logstash_pipeline_loyalty_kn
-  path.config: "/usr/share/logstash/pipeline/logstash_pipeline_loyalty_kn.conf"
