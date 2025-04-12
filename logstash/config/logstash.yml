@@ -8,4 +8,3 @@ node.name: logstash
 config.reload.automatic: true
 config.reload.interval: 3s
 xpack.monitoring.enabled: true
-xpack.security.enabled: false
